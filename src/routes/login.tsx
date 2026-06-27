@@ -5,8 +5,8 @@ import { useI18n } from "@/lib/i18n";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Languages } from "lucide-react";
-import logoAsset from "@/assets/stavya-logo.jpg.asset.json";
+import { Eye, EyeOff, FileText, Hospital, Languages } from "lucide-react";
+
 
 export const Route = createFileRoute("/login")({
   head: () => ({ meta: [{ title: "Login — CSSD Management" }] }),
@@ -55,7 +55,12 @@ function LoginPage() {
 
         <div className="bg-card border border-border rounded-xl shadow-sm p-8">
           <div className="flex flex-col items-center mb-6">
-            <img src={logoAsset.url} alt="Stavya Spine Hospital" className="h-16 w-auto" />
+            <div className="flex flex-col items-center justify-center gap-3">
+              <Hospital className="h-16 w-16 text-primary" />
+              <h1 className="text-2xl font-bold tracking-tight text-foreground">
+                Stavya Spine Hospital
+              </h1>
+            </div>
             <div className="mt-4 text-center">
               <h1 className="text-lg font-semibold">{t("login.title")}</h1>
               <p className="text-xs text-muted-foreground mt-1">{t("login.subtitle")}</p>
