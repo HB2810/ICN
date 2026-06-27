@@ -74,8 +74,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       {/* Mobile top bar */}
       <div className="md:hidden fixed top-0 inset-x-0 z-30 h-14 bg-sidebar border-b border-sidebar-border flex items-center justify-between px-4">
         <div className="flex items-center gap-2">
-          <Hospital className="h-6 w-6 text-primary" />
-          <span className="font-bold text-foreground">Stavya</span>
+          <img src="/ICN/stavya-logo.jpg" alt="Stavya" className="h-8 w-auto object-contain" />
         </div>
         <div className="flex items-center gap-1">
           <LangToggle lang={lang} setLang={setLang} />
@@ -93,8 +92,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       >
         <div className="px-5 py-5 border-b border-sidebar-border">
           <div className="flex items-center gap-2">
-            <Hospital className="h-8 w-8 text-primary" />
-            <span className="font-bold text-lg text-foreground tracking-tight">Stavya Spine</span>
+            <img src="/ICN/stavya-logo.jpg" alt="Stavya Spine Hospital" className="h-12 w-auto object-contain" />
           </div>
           <div className="mt-3">
             <div className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium">

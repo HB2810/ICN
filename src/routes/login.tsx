@@ -56,10 +56,7 @@ function LoginPage() {
         <div className="bg-card border border-border rounded-xl shadow-sm p-8">
           <div className="flex flex-col items-center mb-6">
             <div className="flex flex-col items-center justify-center gap-3">
-              <Hospital className="h-16 w-16 text-primary" />
-              <h1 className="text-2xl font-bold tracking-tight text-foreground">
-                Stavya Spine Hospital
-              </h1>
+              <img src="/ICN/stavya-logo.jpg" alt="Stavya Spine Hospital" className="h-24 w-auto object-contain" />
             </div>
             <div className="mt-4 text-center">
               <h1 className="text-lg font-semibold">{t("login.title")}</h1>
